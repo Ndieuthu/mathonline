@@ -1,0 +1,128 @@
+/* Reset CSS */
+:root{
+    --textColor__hover : #ffffff; 
+    --textColor : #fff;
+    --background__topColor : #03AED2;
+    --background__hoverNavbar :#267589;
+    --olcolor:#1F2544;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(204, 198, 198);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(10deg   ,var(--background__topColor),rgb(251, 251, 107));
+    color: var(--textColor__hover);
+    padding: 1rem 0;
+    text-align: left;
+    
+}
+header>h1{
+    color: #fff;
+    margin-left: 38px;
+}
+.navBar{
+    display: flex; 
+    
+}
+nav {
+    background:#68D2E8;
+    padding: 0.8%;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+nav a {
+    color: var(--textColor);
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 12px;
+}
+
+nav a:hover {
+    background-color:var(--background__topColor);
+    color: var(--textColor__hover);
+    border-radius: 8px;
+}
+.navBar_Left{
+    right: 0;
+    margin-right: 10px;
+    margin-left: 330px;
+    text-align: center;
+}
+.navBar>a:active,.lop>a:active,.navBar_Left>a:active{
+    background-color:var(--background__hoverNavbar) ;
+    border-radius: 8px;
+}
+.container {
+    max-width: 1800px;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    background:#ffffff;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 250px;
+    flex-direction: column;  
+}
+ol>b,p{
+    color: var(--olcolor);
+}
+li{
+    color:var(--olcolor);
+}
+li{
+    margin-bottom: 10px;
+}
+li>b{
+    color: #4f4e4e;
+}
+.main {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    
+}
+
+.card {
+    background: #f4f2f2;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+.logo>i{
+    padding: 3px;
+    font-size: 23px;
+ }
+ .logo{
+     position: relative;
+     left: 0;
+     margin-left: 120px;
+ }
+ header a{
+    text-decoration: none;
+ }
